@@ -1,4 +1,8 @@
-# C++ Nanodegree
+## C++ Nanodegree
+
+# Course 1
+- Understand A\* search algorithm by writing a simple program to find a path
+  between start and finish
 
 Projects
 - Route Planning - Use data from OpenStreet Map Data
