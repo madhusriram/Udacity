@@ -23,6 +23,7 @@ class RouteModel : public Model {
             return std::sqrt(std::pow((x - other.x), 2) + std::pow((y - other.y), 2));
         }
 
+		// constructors, default and with params
         Node(){}
         Node(int idx, RouteModel * search_model, Model::Node node) : Model::Node(node), parent_model(search_model), index(idx) {}
 
@@ -41,7 +42,6 @@ class RouteModel : public Model {
     void CreateNodeToRoadHashmap();
     std::unordered_map<int, std::vector<const Model::Road *>> node_to_road;
     std::vector<Node> m_Nodes;
-
 };
 
 #endif
